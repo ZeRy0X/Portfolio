@@ -98,31 +98,40 @@ body {
     overflow:hidden;
     margin:auto;
     animation: abMeAnim 20s linear infinite;
+
+    text-align: center;
     
   }
 
-#aboutMeBtn1 {
+#knowledgeBtn {
 
-    width: 10dvh;
-    height: 10dvh;
+    width: 12dvh;
+    height: 12dvh;
 
-    background:grey;
-    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    background-image: url(./images/book.png);
+    background-size: contain;
+    /* border-radius: 50%; */
 
     position:absolute;
     top:0; bottom:0; left:0;right:0;
+
+    border: none;
 
     overflow:hidden;
     margin:auto;
     animation: circle1 20s linear infinite;
     
+    color: purple;
+    /* font-size: 2dvh; */
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.6dvh;
+
   }
 
   
   
-
-
-
 
 
 
@@ -211,7 +220,7 @@ body {
 
         transform:rotate(90deg)
                 translate(-27.5dvh)
-                rotate(0deg);
+                rotate(360deg);
     
     }
 
