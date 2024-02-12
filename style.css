@@ -1,242 +1,120 @@
+* {
+
+  margin:  0;
+  padding: 0;
+
+}
+
 body {
 
-    background-color: rgb(31, 29, 29);
-
-    background: url(./images/bg.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-}
-
-#btnDiv {
-
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-
-    margin-top: 40dvh;
-
-    z-index: 1;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  gap: 10dvh;
 
 }
 
-#btn {
 
-    height: 35dvh;
-    width: 35dvh;
-
-    border-radius: 100%;
-    background-color: rgb(0, 0, 0);
-
-    border: none;
-
-    border-radius: 100%;
-    border: 0.2dvh solid;
-
-    z-index: 1;
-    
-
-}
-
-.class {
-
-  animation: mainBtnAnim 1s;
-
+#circle {
+  background: lightblue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 
 
 
+.animatedCard2 {
 
-.main{
-    
-    z-index: 0;
-    width: 55dvh;
-    height: 55dvh;
-    border:1dvh solid #ffffff;
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 60dvh;
+  width: 40dvh;
+  background: #222;
 
-    position:absolute;
-    top:0; bottom:0; left:0;right:0;
+  border-radius: 10px;
+  border: none;
 
-    margin:auto;
-    margin-top: 28dvh;
+  cursor: pointer;
 
-    border-radius:50%; 
+}
 
-    opacity: 0;
+
+.animatedCard2 {
+
+  overflow: hidden;
+
+}
+
+.animatedCard2::before {
+
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 180%;
+  background: #48015b;
+  transform: rotate(45deg);
+
+}
+
+.animatedCard2:hover::before {
+
+  animation: animate2 2s linear infinite;
+
+} 
+
+@keyframes animate2 {
+
+  from {
+
+    transform: rotate(0deg);
 
   }
-
-
-.appearBtns {
-    animation-name: appearBtnsAnim;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
-}
-
-.disappearBtns {
-  animation-name: disappearBtnsAnim;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
   
-#aboutMeBtn {
+  to {
 
-    width: 10dvh;
-    height: 10dvh;
-
-    background:rgb(54, 0, 100);
-    color: white;
-
-    border-radius: 50%;
-    border: none;
-
-    position:absolute;
-    top:0; bottom:0; left:0;right:0;
-
-    overflow:hidden;
-    margin:auto;
-    animation: abMeAnim 20s linear infinite;
-
-    text-align: center;
-    
-  }
-
-#knowledgeBtn {
-
-    width: 12dvh;
-    height: 12dvh;
-
-    background: rgba(0, 0, 0, 0);
-    background-image: url(./images/book.png);
-    background-size: contain;
-    /* border-radius: 50%; */
-
-    position:absolute;
-    top:0; bottom:0; left:0;right:0;
-
-    border: none;
-
-    overflow:hidden;
-    margin:auto;
-    animation: circle1 20s linear infinite;
-    
-    color: purple;
-    /* font-size: 2dvh; */
-    font-weight: bolder;
-    text-align: center;
-    font-size: 1.6dvh;
+    transform: rotate(360deg);
 
   }
 
-  
+
+}
+    
+
+.animatedCard2::after {
+
+  position: absolute;
+  content: '';
+  inset: 1dvh;
+  background: #222;
+  border-radius: 10px;
+
+}
   
 
 
+span {
+
+  z-index: 3;
+  color: rgba(254, 254, 254, 0.1);
+  font-size: 5dvh;
+
+  font-weight: bolder;
+
+}
 
 
 
 
 
 
+a { 
 
+  text-decoration: none;
 
-  @keyframes mainBtnAnim {
-      
-    0% {
-
-        border-color: rgba(255, 255, 102, 1);
-        
-
-    }
-
-    100% {
-
-
-      border-color: rgba(255, 255, 102, 0);
-
-    }
-
-  }
-
-  @keyframes appearBtnsAnim {
-      
-    0% {
-
-        opacity: 0;
-        
-
-    }
-
-    100% {
-
-
-      opacity: 1;
-
-    }
-
-  }
-
-  @keyframes disappearBtnsAnim {
-      
-    0% {
-
-        opacity: 1;
-        
-
-    }
-
-    100% {
-
-
-      opacity: 0;
-
-    }
-
-  }
-
-
-  @keyframes abMeAnim{
-    0% {
-
-        transform:rotate(0deg)
-                translate(-27.5dvh)
-                rotate(360deg);
-    
-    }
-
-    100% {
-      
-        transform:rotate(360deg)
-                translate(-27.5dvh)
-                rotate(-360deg);
-
-    }
-  }
-
-  @keyframes circle1{
-    0% {
-
-        transform:rotate(90deg)
-                translate(-27.5dvh)
-                rotate(360deg);
-    
-    }
-
-    100% {
-      
-        transform:rotate(450deg)
-                translate(-27.5dvh)
-                rotate(-360deg);
-
-    }
-  }
-
-
-
-
-
-
-
-
+} 
