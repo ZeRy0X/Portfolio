@@ -32,13 +32,19 @@ const amBtn = function() {
 
 
 
-// const bg = document.querySelector('#btn');
-// const windowWidth = window.innerWidth / 5;
-// const windowHeight = window.innerHeight / 5 ;
+const bg = document.querySelector('body');
+const windowWidth = window.innerWidth / 3;
+const windowHeight = window.innerHeight / 3 ;
 
-// bg.addEventListener('mousemove', (e) => {
-//   const mouseX = e.clientX / windowWidth;
-//   const mouseY = e.clientY / windowHeight;
+bg.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX / windowWidth;
+  const mouseY = e.clientY / windowHeight;
   
-//   bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
-// });
+  bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+});
+
+
+
+
+
+
