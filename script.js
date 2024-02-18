@@ -1,3 +1,7 @@
+console.log('%cHey Hey, what are you doing here?', 'background: #F1C40F; color: #17202A; font-size: 3.5dvh;');
+console.log('%cIf you are searching for something on the code you can find it on my Github :)', 'background: #F39C12; color: #17202A; font-size: 2.5dvh;');
+console.log('%chttps://github.com/ZeRy0X/portfolio', 'background: #E74C3C; color: #17202A; font-size: 2.5dvh;');
+
 const mainOverBtn = function() {
 
     if (!btn.classList.contains("class")) {
@@ -32,7 +36,7 @@ const amBtn = function() {
 
 
 
-const bg = document.querySelector('body');
+const bg = document.querySelector('#bg');
 const windowWidth = window.innerWidth / 3;
 const windowHeight = window.innerHeight / 3 ;
 

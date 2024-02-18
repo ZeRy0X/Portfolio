@@ -14,12 +14,22 @@ body {
   background: #000;
   color: #fff;
   gap: 10dvh;
-
-
-  background-image: url(./images/oval.png);
-  background-repeat: no-repeat;
-  background-position: 57dvh;
   
+
+}
+
+#bg {
+
+  position: absolute;
+  position: 57dvh;
+
+  border-image:round;
+  border: yellow;
+  
+
+  height: 90dvh;
+
+  opacity: 0.1;
 
 }
 
