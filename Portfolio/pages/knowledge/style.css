@@ -1,0 +1,209 @@
+* {
+
+    color: white;
+
+}
+
+body {
+
+    background-color: #282C35;
+
+}
+
+#title {
+
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 7dvh;
+
+}
+
+#titleSec1 {
+
+    margin-top: 8dvh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#titleSec2 {
+
+    margin-top: 8dvh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+hr {
+
+    background-color: rgb(38 155 222);
+
+    border-radius: 100dvh;
+    border: none;
+
+    height: 1dvh;
+
+}
+
+
+.divider {
+
+    height: 12dvh; /* Adjust the height of the divider as needed */
+    
+    margin-left: 3dvh;
+    
+
+    border-left: 0.5dvh solid rgb(0, 0, 0); /* Style and color of the divider */
+
+}
+
+.titleSec {
+
+    color: black;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.txtSpan {
+
+    margin-left: 2dvh;
+
+    font-size: 3dvh;
+
+}
+
+/* C SECTION */
+
+#c {
+
+    width: 100%;
+
+    border: 0.5dvh solid black;
+    border-radius: 100dvh;
+
+}
+
+#cDesc {
+
+    width: 90%;
+
+    margin-left: 2dvh;
+    margin-top: 1dvh; 
+    margin-bottom: 1dvh;
+
+    display: flex;
+    align-items: center;
+} 
+
+
+
+
+/* CPP SECTION */
+
+#cpp {
+
+    margin-top: 1dvh;
+
+    width: 100%;
+
+    border: 0.5dvh solid black;
+    border-radius: 100dvh;
+
+}
+
+#cppDesc {
+
+    width: 90%;
+
+    margin-left: 2dvh;
+    margin-top: 1dvh; 
+    margin-bottom: 1dvh;
+
+    display: flex;
+    align-items: center;
+} 
+
+
+
+
+/* JS SECTION */
+
+#js {
+
+    margin-top: 1dvh;
+
+    width: 100%;
+
+    border: 0.5dvh solid black;
+    border-radius: 100dvh;
+
+}
+
+#jsDesc {
+
+    width: 90%;
+
+    margin-left: 2dvh;
+    margin-top: 1dvh; 
+    margin-bottom: 1dvh;
+
+    display: flex;
+    align-items: center;
+} 
+
+/* PYTHON SECTION */
+
+#py {
+
+    margin-top: 1dvh;
+
+    width: 100%;
+
+    border: 0.5dvh solid black;
+    border-radius: 100dvh;
+
+}
+
+#pyDesc {
+
+    width: 90%;
+
+    margin-left: 2dvh;
+    margin-top: 1dvh; 
+    margin-bottom: 1dvh;
+
+    display: flex;
+    align-items: center;
+} 
+
+
+
+/* Navbar */
+
+/* Width */
+
+::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+
+    border-radius: 100vh;
+    background: #011127;
+
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+    background: rgb(38 155 222);
+
+}
+
+    
+/* Navbar */
+
+

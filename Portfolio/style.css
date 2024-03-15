@@ -1,0 +1,135 @@
+* {
+
+  margin:  0;
+  padding: 0;
+
+}
+
+body {
+
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  gap: 10dvh;
+  
+
+}
+
+#bg {
+
+  position: absolute;
+  position: 57dvh;
+
+  border-image:round;
+  border: yellow;
+  
+
+  height: 90dvh;
+
+  opacity: 0.1;
+
+}
+
+
+
+
+.animatedCard2 {
+
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 60dvh;
+  width: 40dvh;
+  background: #222;
+  transition: transform 0.3s ease; 
+
+  transform: rotate3d(0, 0, 0, 0deg);
+  transform-origin: center center;
+
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+
+
+}
+
+
+.animatedCard2 {
+
+  overflow: hidden;
+
+}
+
+.animatedCard2::before {
+
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 180%;
+  background: #48015b;
+  transform: rotate(45deg);
+
+}
+
+.animatedCard2:hover::before {
+
+  animation: animate2 2s linear infinite;
+
+} 
+
+@keyframes animate2 {
+
+  from {
+
+    transform: rotate(0deg);
+
+  }
+  
+  to {
+
+    transform: rotate(360deg);
+
+  }
+
+
+}
+    
+
+.animatedCard2::after {
+
+  position: absolute;
+  content: '';
+  inset: 1dvh;
+  background: #222;
+  border-radius: 10px;
+
+}
+  
+
+
+span {
+
+  z-index: 3;
+  color: rgba(254, 254, 254, 0.1);
+  font-size: 5dvh;
+
+  font-weight: bolder;
+
+}
+
+
+
+
+
+
+a { 
+
+  text-decoration: none;
+
+} 
+
